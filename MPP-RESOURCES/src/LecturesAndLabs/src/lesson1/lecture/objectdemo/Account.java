@@ -2,12 +2,12 @@ package LecturesAndLabs.src.lesson1.lecture.objectdemo;
 
 public class Account {
 	private String id;
+    private double balance = 0.0;
 
     Account() {
 		id = generateId();
 	}
-	private double balance = 0.0;
-	
+
 	public void updateBalance(double amount) {
 		balance += amount;
 	}
