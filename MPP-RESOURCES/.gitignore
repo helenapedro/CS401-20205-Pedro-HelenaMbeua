@@ -1,0 +1,48 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.idea
+src/LecturesAndLabs/.settings
+src/LecturesAndLabs/bin
+src/LecturesAndLabs/.classpath
+src/LecturesAndLabs/.project
+src/LecturesAndLabs/bug_report.txt
+src/LecturesAndLabs/bug_report2.txt
+src/LecturesAndLabs/diamond.uml
+src/LecturesAndLabs/representations.aird
+src/LecturesAndLabs/tests.xml
+src/LecturesAndLabs/text
+src/MPP-RESOURCES.iml
+
+src/InClassExercises/.settings
+src/InClassExercises/bin
+src/InClassExercises/.classpath
+src/InClassExercises/.project
+src/InClassExercises/src/.classpath
+src/InClassExercises/src/.project
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
