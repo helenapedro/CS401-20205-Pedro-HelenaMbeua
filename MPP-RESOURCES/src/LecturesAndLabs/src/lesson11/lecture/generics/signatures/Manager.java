@@ -1,4 +1,4 @@
-package lesson11.lecture.generics.signatures;
+package LecturesAndLabs.src.lesson11.lecture.generics.signatures;
 
 class Manager extends Employee {
 	public Manager(String name, double salary, int year, int month, int day) {

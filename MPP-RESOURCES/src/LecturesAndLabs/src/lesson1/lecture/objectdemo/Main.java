@@ -1,4 +1,4 @@
-package lesson1.lecture.objectdemo;
+package LecturesAndLabs.src.lesson1.lecture.objectdemo;
 
 public class Main {
 
@@ -11,7 +11,6 @@ public class Main {
 		double bal = cust.checkBalance();
 		System.out.println(cust.getName() + "'s ID: " + id +
 				"\n"+cust.getName() + "'s balance: " + bal);
-
 	}
 
 }

@@ -1,4 +1,4 @@
-package lesson6.lecture.javafx.tables;
+package LecturesAndLabs.src.lesson6.lecture.javafx.tables;
 
 public class Product {
 	private Catalog catalog;
@@ -9,7 +9,7 @@ public class Product {
     private String mfgDate;
     private String description;
     private int quantityRequested;
-    
+
     public int getQuantityRequested() {
 		return quantityRequested;
 	}

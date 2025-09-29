@@ -1,4 +1,4 @@
-package lesson6.lecture.javafx.tables;
+package LecturesAndLabs.src.lesson6.lecture.javafx.tables;
 
 import javafx.application.Application;
 import javafx.application.Platform;

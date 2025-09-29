@@ -1,4 +1,4 @@
-package lesson11.lecture.generics.signatures;
+package LecturesAndLabs.src.lesson11.lecture.generics.signatures;
 
 import java.time.LocalDate;
 

@@ -1,9 +1,9 @@
-package lesson11.lecture.generics.signatures;
+package LecturesAndLabs.src.lesson11.lecture.generics.signatures;
 import java.util.*;
 import java.util.function.*;
 import java.util.stream.*;
 
-import old.lesson11.labsolns.prob7.mystream.MyStream;
+//import old.lesson11.labsolns.prob7.mystream.MyStream;
 
 //Stream<R> map(Function<? super T,? extends R> mapper)
 //acting on a Stream<T>
