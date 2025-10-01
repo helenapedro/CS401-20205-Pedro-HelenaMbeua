@@ -1,4 +1,4 @@
-package lesson02.lecture.bidir.onetomany;
+package LecturesAndLabs.src.lesson02.lecture.bidir.onetomany;
 
 //Customer "owns" the 1-1 relationship with ShoppingCart
 public class Customer {

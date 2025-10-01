@@ -1,6 +1,6 @@
-package lesson02.lecture.bidir.onetomany.extpackage;
+package LecturesAndLabs.src.lesson02.lecture.bidir.onetomany.extpackage;
 
-import lesson02.lecture.bidir.onetomany.*;
+import LecturesAndLabs.src.lesson02.lecture.bidir.onetomany.*;
 
 
 public class Main {  

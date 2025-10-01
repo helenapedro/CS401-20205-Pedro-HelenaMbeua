@@ -1,4 +1,4 @@
-package lesson02.lecture.bidir.onetomany;
+package LecturesAndLabs.src.lesson02.lecture.bidir.onetomany;
 
 public class Item {
 	private String name;
