@@ -14,6 +14,10 @@ src/LecturesAndLabs/representations.aird
 src/LecturesAndLabs/tests.xml
 src/LecturesAndLabs/text
 src/MPP-RESOURCES.iml
+keytakeaways
+.imls
+.idea
+out.production.MPP-RESOURCES
 
 src/InClassExercises/.settings
 src/InClassExercises/bin
