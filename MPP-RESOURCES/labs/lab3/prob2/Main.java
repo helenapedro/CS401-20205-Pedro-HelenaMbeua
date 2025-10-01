@@ -1,9 +1,8 @@
-package lesson3.labs.prob2;
-import java.util.*;
+package labs.lab3.prob2;
 
-import lesson3.labsolns.prob2.Apartment;
-import lesson3.labsolns.prob2.Building;
-import lesson3.labsolns.prob2.LandlordInfo;
+//import lesson3.labsolns.prob2.Apartment;
+//import lesson3.labsolns.prob2.Building;
+//import lesson3.labsolns.prob2.LandlordInfo;
 public class Main {
 
 	public static void main(String[] args) {

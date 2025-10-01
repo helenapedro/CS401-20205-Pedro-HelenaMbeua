@@ -13,6 +13,7 @@
       <excludeFolder url="file://$MODULE_DIR$/MPP-RESOURCES/out" />
       <excludeFolder url="file://$MODULE_DIR$/PEDRO-MPP-2025/.mvn" />
       <excludeFolder url="file://$MODULE_DIR$/PEDRO-MPP-2025/target" />
+      <excludeFolder url="file://$MODULE_DIR$/lib" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
