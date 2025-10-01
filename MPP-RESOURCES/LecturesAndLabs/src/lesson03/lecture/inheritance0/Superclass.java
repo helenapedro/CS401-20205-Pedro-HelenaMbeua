@@ -1,4 +1,4 @@
-package lesson03.lecture.inheritance0;
+package LecturesAndLabs.src.lesson03.lecture.inheritance0;
 
 public class Superclass {
 	protected void print(String s) {

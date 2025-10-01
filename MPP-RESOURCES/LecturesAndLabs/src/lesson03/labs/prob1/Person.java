@@ -1,4 +1,4 @@
-package lesson03.labs.prob1;
+package LecturesAndLabs.src.lesson03.labs.prob1;
 
 
 public class Person {

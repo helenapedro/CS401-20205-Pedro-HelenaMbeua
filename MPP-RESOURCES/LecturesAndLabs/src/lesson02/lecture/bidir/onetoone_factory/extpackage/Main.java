@@ -1,9 +1,8 @@
-package lesson02.lecture.bidir.onetoone_factory.extpackage;
+package LecturesAndLabs.src.lesson02.lecture.bidir.onetoone_factory.extpackage;
 
-import lesson02.lecture.birdir.onetoone_factory.CustShopCartFactory;
-import lesson02.lecture.birdir.onetoone_factory.Customer;
-import lesson02.lecture.birdir.onetoone_factory.Item;
-import lesson02.lecture.birdir.onetoone_factory.ShoppingCart;
+import LecturesAndLabs.src.lesson02.lecture.birdir.onetoone_factory.CustShopCartFactory;
+import LecturesAndLabs.src.lesson02.lecture.birdir.onetoone_factory.Customer;
+import LecturesAndLabs.src.lesson02.lecture.birdir.onetoone_factory.Item;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package lesson02.lecture.bidir.onetoone;
+package LecturesAndLabs.src.lesson02.lecture.bidir.onetoone;
 
 //Customer "owns" the 1-1 relationship with ShoppingCart
 public class Customer {
@@ -11,7 +11,8 @@ public class Customer {
 	public String getName() {
 		return name;
 	}
-	public ShoppingCart getCart() {
+
+    public ShoppingCart getCart() {
 		return cart;
 	}
 	

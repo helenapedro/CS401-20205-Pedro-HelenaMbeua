@@ -1,4 +1,4 @@
-package lesson05.lecture.factorymethods6.studreport;
+package LecturesAndLabs.src.lesson05.lecture.factorymethods6.studreport;
 
 
 //Outside of studreport package, Student is immutable

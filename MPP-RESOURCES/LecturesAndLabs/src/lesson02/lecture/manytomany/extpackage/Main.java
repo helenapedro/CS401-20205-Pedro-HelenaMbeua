@@ -1,7 +1,7 @@
-package lesson02.lecture.manytomany.extpackage;
+package LecturesAndLabs.src.lesson02.lecture.manytomany.extpackage;
 import java.util.*;
 
-import lesson02.lecture.manytomany.*;
+import LecturesAndLabs.src.lesson02.lecture.manytomany.*;
 public class Main {
 	
 	public static void main(String[] args) { 

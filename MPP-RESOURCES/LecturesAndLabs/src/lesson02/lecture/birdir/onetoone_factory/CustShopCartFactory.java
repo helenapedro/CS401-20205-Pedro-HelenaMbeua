@@ -1,4 +1,4 @@
-package lesson02.lecture.birdir.onetoone_factory;
+package LecturesAndLabs.src.lesson02.lecture.birdir.onetoone_factory;
 
 public class CustShopCartFactory {
 	public static Customer createCustomer(String name) {

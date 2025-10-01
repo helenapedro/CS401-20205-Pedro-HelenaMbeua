@@ -1,6 +1,6 @@
-package lesson03.lecture.inheritance0.externalpackage;
+package LecturesAndLabs.src.lesson03.lecture.inheritance0.externalpackage;
 
-import lesson03.lecture.inheritance0.Subclass;
+import LecturesAndLabs.src.lesson03.lecture.inheritance0.Subclass;
 
 /** Since Main lies in a different package from Superclass,
  *  this use of inheritance is not allowed. This can be fixed by

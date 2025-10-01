@@ -1,4 +1,4 @@
-package lesson02.lecture.manytomany;
+package LecturesAndLabs.src.lesson02.lecture.manytomany;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package lesson02.lecture.bidir.onetoone;
+package LecturesAndLabs.src.lesson02.lecture.bidir.onetoone;
 
 public class Item {
 	String name;

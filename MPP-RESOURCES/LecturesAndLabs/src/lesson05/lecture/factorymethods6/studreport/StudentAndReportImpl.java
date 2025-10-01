@@ -1,4 +1,4 @@
-package lesson05.lecture.factorymethods6.studreport;
+package LecturesAndLabs.src.lesson05.lecture.factorymethods6.studreport;
 
 //Immutable relative to its package studreport
 final class StudentAndReportImpl implements StudentAndReport {

@@ -1,4 +1,4 @@
-package lesson05.lecture.factorymethods6.studreport;
+package LecturesAndLabs.src.lesson05.lecture.factorymethods6.studreport;
 
 public interface StudentAndReport {
 	public Student getStudent();
