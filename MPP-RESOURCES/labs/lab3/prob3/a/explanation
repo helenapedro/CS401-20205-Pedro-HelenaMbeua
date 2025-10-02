@@ -1,0 +1,9 @@
+Case1: Using Inheritance (as in the UML diagram)
+    Here, the design says Cylinder extends Circle.
+        * That means a Cylinder is-a Circle.
+        * It reuses the radius field from Circle and adds height.
+
+Does it make sense to use inheritance here?
+    Not really, a Cylinder is not a Circle; rather, it has a Circle base.
+    So the inheritance relationship is a bit forced. This is one of those
+    “wrong uses of inheritance for convenience” examples mentioned in the slides.
