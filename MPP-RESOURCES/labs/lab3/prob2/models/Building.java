@@ -2,14 +2,22 @@ package labs.lab3.prob2.models;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Building {
     private final List<Apartment> apartments;
-    private final double maintenanceCost;
+    private final double monthlyMaintenanceCost;
+    private final double baseRent;
 
-    public Building(double maintenanceCost, double aptRent) {
-        this.maintenanceCost = maintenanceCost;
+    public Building(double monthlyMaintenanceCost, double baseRent) {
+        this.monthlyMaintenanceCost = monthlyMaintenanceCost;
+        this.baseRent = baseRent;
         apartments = new ArrayList<>();
+    }
+
+    public double generateMonthlyProfit() {
+        if (apartments.isEmpty()) return 0;
+        return sumAllAptRent() + baseRent - monthlyMaintenanceCost;
     }
 
     public void addApartment(Apartment a) {
@@ -18,23 +26,14 @@ public class Building {
         apartments.add(a);
     }
 
-    public double generateMonthlyProfit() {
-        double sum = sumAllApRent();
-        return sum - maintenanceCost;
+    private double sumAllAptRent() {
+        return apartments.stream()
+                .filter(Objects::nonNull)
+                .mapToDouble(Apartment::monthlyRent)
+                .sum();
     }
 
-    private double sumAllApRent() {
-        double sum = 0.0;
-        for (Apartment a : apartments) {
-            if (a != null) {
-                double rent = a.rent();
-                sum += rent;
-            }
-        }
-        return sum;
-    }
-
-    public double getMaintenanceCost() {
-        return maintenanceCost;
+    public double getMonthlyMaintenanceCost() {
+        return monthlyMaintenanceCost;
     }
 }
