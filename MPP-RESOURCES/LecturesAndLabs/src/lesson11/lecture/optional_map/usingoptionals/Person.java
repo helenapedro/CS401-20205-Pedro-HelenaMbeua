@@ -1,4 +1,4 @@
-package lesson11.lecture.optional_map.usingoptionals;
+package LecturesAndLabs.src.lesson11.lecture.optional_map.usingoptionals;
 
 import java.util.Optional;
 

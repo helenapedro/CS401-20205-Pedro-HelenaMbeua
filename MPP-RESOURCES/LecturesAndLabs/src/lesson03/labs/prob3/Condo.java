@@ -1,4 +1,4 @@
-package lesson03.labs.prob3;
+package LecturesAndLabs.src.lesson03.labs.prob3;
 
 
 

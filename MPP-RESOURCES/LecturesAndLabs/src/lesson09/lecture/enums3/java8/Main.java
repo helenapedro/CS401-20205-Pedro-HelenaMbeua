@@ -1,4 +1,4 @@
-package lesson09.lecture.enums3.java8;
+package LecturesAndLabs.src.lesson09.lecture.enums3.java8;
 
 public class Main {
 

@@ -1,6 +1,4 @@
-package lesson11.lecture.optional_map.usingoptionals;
-
-import java.util.Optional;
+package LecturesAndLabs.src.lesson11.lecture.optional_map.usingoptionals;
 
 public class Address {
 	private String street, city, state, zip;

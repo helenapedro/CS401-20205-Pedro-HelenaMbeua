@@ -1,14 +1,16 @@
-package lesson03.labs.prob3;
+package LecturesAndLabs.src.lesson03.labs.prob3;
 
 
 
 public class House {
 	private double lotSize;
 	private Address address;
-	public Address getAddress() {
+
+    public Address getAddress() {
 		return address;
 	}
-	public House(Address address, double lotSize) {
+
+    public House(Address address, double lotSize) {
 		this.address = address;
 		this.lotSize = lotSize;
 	}

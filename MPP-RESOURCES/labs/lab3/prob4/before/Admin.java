@@ -1,4 +1,6 @@
-package LecturesAndLabs.src.lesson03.labs.prob3;
+package labs.lab3.prob4.before;
+
+import labs.lab3.prob4.models.*;
 
 public class Admin {
 	public static double computeTotalRent(Object[] properties) {
@@ -15,7 +17,7 @@ public class Admin {
 			else if (o instanceof Trailer) {
 				Trailer h = (Trailer) o;
 				totalRent += h.computeRent();
-			}	
+			}
 		}
 		return totalRent;
 	}
