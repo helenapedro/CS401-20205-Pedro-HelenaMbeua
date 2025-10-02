@@ -4,26 +4,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Building {
-    private List<Apartment> apartments;
-    private double maintainanceCost;
-    private double rentCost;
+    private final List<Apartment> apartments;
+    private final double maintenanceCost;
 
-    public Building(double maintainanceCost, double rentCost) {
-        this.maintainanceCost = maintainanceCost;
-        this.rentCost = rentCost;
+    public Building(double maintenanceCost, double aptRent) {
+        this.maintenanceCost = maintenanceCost;
         apartments = new ArrayList<>();
     }
 
-    public double generateCost() {
-        // TODO
-        return 0.0;
+    public void addApartment(Apartment a) {
+        if (a == null)
+            throw new NullPointerException("Cannot add a null apartment");
+        apartments.add(a);
     }
 
-    public double getMaintainanceCost() {
-        return maintainanceCost;
+    public double generateMonthlyProfit() {
+        double sum = sumAllApRent();
+        return sum - maintenanceCost;
     }
 
-    public double getRentCost() {
-        return rentCost;
+    private double sumAllApRent() {
+        double sum = 0.0;
+        for (Apartment a : apartments) {
+            if (a != null) {
+                double rent = a.rent();
+                sum += rent;
+            }
+        }
+        return sum;
+    }
+
+    public double getMaintenanceCost() {
+        return maintenanceCost;
     }
 }

@@ -64,7 +64,7 @@ public class Main {
         }
 
 		System.out.printf(
-                "Total Profit -> $%.2f%n",
+                "Total Profit -> " +
                         landlord.calculateMonthlyProfit());
     }
 }
