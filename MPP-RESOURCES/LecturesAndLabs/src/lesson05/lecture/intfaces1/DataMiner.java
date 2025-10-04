@@ -1,4 +1,4 @@
-package lesson05.lecture.intfaces1;
+package LecturesAndLabs.src.lesson05.lecture.intfaces1;
 
 import java.util.ArrayList;
 import java.util.List;
