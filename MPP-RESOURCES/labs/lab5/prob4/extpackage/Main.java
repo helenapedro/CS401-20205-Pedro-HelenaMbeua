@@ -1,18 +1,16 @@
-package lesson5.labs.prob4.extpackage;
+package labs.lab5.prob4.extpackage;
 
+import labs.lab5.prob4.*;
 import java.time.LocalDate;
-
-import lesson5.labs.prob4.Customer;
-import lesson5.labs.prob4.Order;
 
 public class Main {
 	public static void main(String[] args) {
-		Customer cust = new Customer("Bob");
-		Order order = Order.newOrder(cust, LocalDate.now());
+		Customer cust = CustOrderFactory.createCustomer("Bob");
+		Order order = CustOrderFactory.newOrder(cust, LocalDate.now());
 		order.addItem("Shirt");
 		order.addItem("Laptop");
 
-		order = Order.newOrder(cust, LocalDate.now());
+		order =  CustOrderFactory.newOrder(cust, LocalDate.now());
 		order.addItem("Pants");
 		order.addItem("Knife set");
 
