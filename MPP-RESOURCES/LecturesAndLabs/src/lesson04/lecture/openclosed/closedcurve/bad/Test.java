@@ -1,4 +1,4 @@
-package lesson04.lecture.openclosed.closedcurve.bad;
+package LecturesAndLabs.src.lesson04.lecture.openclosed.closedcurve.bad;
 
 class Test {
 	public static void main(String[] args) {
