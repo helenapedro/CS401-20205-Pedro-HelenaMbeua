@@ -5,6 +5,7 @@ lib
 
 out/production/CS401-20205-Pedro-HelenaMbeua
 .idea
+lib/
 
 # Log file
 *.log
