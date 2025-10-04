@@ -1,29 +1,19 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-.idea
-src/LecturesAndLabs/.settings
-src/LecturesAndLabs/bin
-src/LecturesAndLabs/.classpath
-src/LecturesAndLabs/.project
-src/LecturesAndLabs/bug_report.txt
-src/LecturesAndLabs/bug_report2.txt
-src/LecturesAndLabs/diamond.uml
-src/LecturesAndLabs/representations.aird
-src/LecturesAndLabs/tests.xml
-src/LecturesAndLabs/text
-src/MPP-RESOURCES.iml
-keytakeaways
-.imls
-out.production.MPP-RESOURCES
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
-src/InClassExercises/.settings
-src/InClassExercises/bin
-src/InClassExercises/.classpath
-src/InClassExercises/.project
-src/InClassExercises/src/.classpath
-src/InClassExercises/src/.project
+### IntelliJ IDEA ###
+.idea/
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+.mvn
+
 
 ### Eclipse ###
 .apt_generated
@@ -33,9 +23,6 @@ src/InClassExercises/src/.project
 .settings
 .springBeans
 .sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
 
 ### NetBeans ###
 /nbproject/private/
@@ -43,6 +30,9 @@ bin/
 /dist/
 /nbdist/
 /.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/

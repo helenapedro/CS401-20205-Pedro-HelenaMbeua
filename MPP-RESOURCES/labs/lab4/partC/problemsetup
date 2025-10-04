@@ -1,0 +1,25 @@
+1. Setup
+    Three kinds of employees:
+        Hourly -> paid hourlyWage × hoursPerWeek × 4
+        Salaried -> paid a fixed monthly salary
+        Commissioned -> paid baseSalary + commission × (sum of all orders sold in the previous month)
+
+All employees need a Paycheck. A paycheck includes:
+    grossPay,
+    FICA, state, local, medicare, socialSecurity ,deductions,
+    netPay
+
+The Template Method pattern means:
+    A superclass (abstract) defines the skeleton of an algorithm.
+    Subclasses override only the variable parts.
+
+    - the Employee class is abstract.
+    - It defines calcCompensation(month, year) as a concrete template method.
+    - Inside it, it calls the abstract method calcGrossPay(month, year)
+        (implemented differently by each subclass).
+    - Then, the rest (tax calculations, creation of Paycheck) is the fixed part handled in Employee.
+
+    So the template algorithm is:
+        - Ask subclass for gross pay -> calcGrossPay()
+        - Compute deductions (same for everyone)
+        - Return a new immutable Paycheck
