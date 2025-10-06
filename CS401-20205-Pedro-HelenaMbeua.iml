@@ -13,6 +13,9 @@
       <excludeFolder url="file://$MODULE_DIR$/MPP-RESOURCES/keytakeaways" />
       <excludeFolder url="file://$MODULE_DIR$/MPP-RESOURCES/out" />
       <excludeFolder url="file://$MODULE_DIR$/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/MPP-RESOURCES/labs/mockmid" />
+      <excludeFolder url="file://$MODULE_DIR$/MPP-RESOURCES/labs/mockmid/prob4" />
+      <excludeFolder url="file://$MODULE_DIR$/MPP-RESOURCES/labs/mockmidterm" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -1,4 +1,4 @@
-package lesson02.lecture.unidirectional.onemany;
+package LecturesAndLabs.src.lesson02.lecture.unidirectional.onemany;
 
 public class Item {
 	String name;
