@@ -1,24 +1,20 @@
 package labs.lab2.prob2B;
 
 public class OrderLine {
-    private String name;
+    private int lineNum, quantity;
+    private double price;
     private Order order;
 
-    public OrderLine(String name, Order order) {
-        this.name = name;
+    //package level visibility
+    public OrderLine(int lineNum, double price, int quantity, Order order) {
+        this.lineNum = lineNum;
+        this.price = price;
+        this.quantity = quantity;
         this.order = order;
     }
 
     @Override
     public String toString() {
-        return name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Order getOrder() {
-        return order;
+        return "  line item: \n"  + "    line num = " + lineNum + "    price = " + price + "    quantity = "+ quantity;
     }
 }

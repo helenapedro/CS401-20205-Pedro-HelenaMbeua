@@ -1,16 +1,25 @@
 package labs.lab2.prob2A;
 
-public class GradeReport {
+public class GradeReport implements Comparable<GradeReport>{
     private String grade;
-    private Student owner;
+    private Student student;
 
-    GradeReport(Student student) {
-        this.grade = "";
-        owner = student;
+    GradeReport(Student st) {
+        student = st;
     }
 
-    public Student getOwner() {
-        return owner;
+    @Override
+    public int compareTo(GradeReport o) {
+        return grade.compareTo(o.grade);
+    }
+
+    @Override
+    public String toString() {
+        return grade;
+    }
+
+    public Student getStudent() {
+        return student;
     }
 
     public String getGrade() {

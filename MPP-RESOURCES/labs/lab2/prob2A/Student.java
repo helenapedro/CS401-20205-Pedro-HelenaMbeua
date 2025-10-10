@@ -2,23 +2,23 @@ package labs.lab2.prob2A;
 
 public class Student {
     private final String name;
-    private final GradeReport gradeReport;
+    private final GradeReport report;
 
     public Student(String name) {
         this.name = name;
-        gradeReport = new GradeReport(this);
+        report = new GradeReport(this);
     }
 
     @Override
     public String toString() {
-        return name;
+        return name + ": " + report;
     }
 
     public String getName() {
         return name;
     }
 
-    public GradeReport getGradeReport() {
-        return gradeReport;
+    public GradeReport getReport() {
+        return report;
     }
 }
