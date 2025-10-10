@@ -9,8 +9,8 @@ public class HRPayrollApp {
         Employee e2 = new Salaried(4000);
         Employee e3 = new Commissioned(0.1, 2000);
 
-        e1.print(3, 2025);
-        e2.print(3, 2025);
-        e3.print(3, 2025);
+        e1.print();
+        e2.print();
+        e3.print();
     }
 }

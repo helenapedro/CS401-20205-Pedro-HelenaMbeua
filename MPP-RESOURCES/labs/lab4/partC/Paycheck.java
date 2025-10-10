@@ -3,27 +3,37 @@ package labs.lab4.partC;
 final public class Paycheck {
     private double grossPay, fica, state, local, medicare, socialSecurity;
 
-    public Paycheck(double grossPay, double fica, double state,
-                    double local, double medicare, double socialSecurity) {
+    public Paycheck(double grossPay, Tax fica, Tax state,
+                    Tax local, Tax medicare, Tax socialSecurity) {
         this.grossPay = grossPay;
-        this.fica = fica;
-        this.state = state;
-        this.local = local;
-        this.medicare = medicare;
-        this.socialSecurity = socialSecurity;
+        this.fica = fica.getVal();
+        this.state = state.getVal();
+        this.local = local.getVal();
+        this.medicare = medicare.getVal();
+        this.socialSecurity = socialSecurity.getVal();
     }
 
     public double getNetPay() {
-        return grossPay - (fica + state + local + medicare + socialSecurity);
+        return grossPay - grossPay * fica
+                - grossPay * state
+                - grossPay * local
+                - grossPay * medicare
+                - grossPay * socialSecurity;
     }
 
     public void print() {
-        System.out.printf("Gross Pay: %.2f%n", grossPay);
-        System.out.printf("  FICA: %.2f%n", fica);
-        System.out.printf("  State Tax: %.2f%n", state);
-        System.out.printf("  Local Tax: %.2f%n", local);
-        System.out.printf("  Medicare: %.2f%n", medicare);
-        System.out.printf("  Social Security: %.2f%n", socialSecurity);
-        System.out.printf("Net Pay: %.2f%n", getNetPay());
+        System.out.println(toString());
+    }
+
+    @Override
+    public String toString() {
+        return "Paystub: \n "
+                + "  Gross Pay: " + grossPay + "\n"
+                + "  Fica: " + fica  + "\n"
+                + "  State: " + state  + "\n"
+                + "  Local: " + local  + "\n"
+                + "  Medicare: " + medicare  + "\n"
+                + "  Social Security: " + socialSecurity  + "\n"
+                + "  NET PAY: " + getNetPay();
     }
 }
