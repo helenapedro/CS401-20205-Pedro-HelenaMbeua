@@ -8,30 +8,30 @@ public class Main {
 
 	public static void main(String[] args) {
 		Apartment[] apts0 = {
-				new Apartment(600),
-				new Apartment(700)
+				new Apartment("Apt1", 600),
+				new Apartment("Apt2", 700)
         };
 
 		Apartment[] apts1 = {
-				new Apartment(500),
-				new Apartment(450)
+				new Apartment("Apt3",500),
+				new Apartment("Apt4",450)
 		};
 
 		Apartment[] apts2 = {
-				new Apartment(1100),
-				new Apartment(650)
+				new Apartment("Apt5", 1100),
+				new Apartment("Apt6", 650)
         };
 
 		Apartment[] apts3 = {
-				new Apartment(6750),
-				new Apartment(945)
+				new Apartment("Apt7", 6750),
+				new Apartment("Apt8", 945)
 		};
 
 		Building[] bldgs = {
-				new Building(150, 400),
-				new Building(175, 900),
-				new Building(150, 300),
-				new Building(175, 775)
+				new Building("A", 150, 400),
+				new Building("B", 175, 900),
+				new Building("C", 150, 300),
+				new Building("D", 175, 775)
 		};
 
         try {

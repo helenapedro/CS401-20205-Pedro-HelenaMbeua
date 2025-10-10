@@ -1,15 +1,15 @@
 package labs.lab3.prob2.models;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class Building {
+    private final String name;
     private final List<Apartment> apartments;
     private final double monthlyMaintenanceCost;
     private final double baseRent;
 
-    public Building(double monthlyMaintenanceCost, double baseRent) {
+    public Building(String name, double monthlyMaintenanceCost, double baseRent) {
+        this.name = name;
         this.monthlyMaintenanceCost = monthlyMaintenanceCost;
         this.baseRent = baseRent;
         apartments = new ArrayList<>();
@@ -31,6 +31,18 @@ public class Building {
                 .filter(Objects::nonNull)
                 .mapToDouble(Apartment::monthlyRent)
                 .sum();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<Apartment> getApartments() {
+        return apartments;
+    }
+
+    public double getBaseRent() {
+        return baseRent;
     }
 
     public double getMonthlyMaintenanceCost() {

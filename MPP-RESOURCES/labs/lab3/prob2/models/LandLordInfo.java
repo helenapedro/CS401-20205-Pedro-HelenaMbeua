@@ -1,8 +1,6 @@
 package labs.lab3.prob2.models;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class LandLordInfo {
     private final List<Building> buildings;

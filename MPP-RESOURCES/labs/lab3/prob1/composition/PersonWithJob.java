@@ -16,13 +16,10 @@ public class PersonWithJob {
 	@Override
 	public boolean equals(Object aPerson) {
 		if(aPerson == null) return false; 
-		if(!(aPerson instanceof PersonWithJob)) return false;
+		if(!(aPerson instanceof PersonWithJob p)) return false;
 
-		PersonWithJob p = (PersonWithJob)aPerson;
-
-		boolean isEqual = this.person.getName().equals(p.person.getName()) &&
+        return this.person.getName().equals(p.person.getName()) &&
 				this.getSalary()==p.getSalary();
-		return isEqual;
 	}
 	public static void main(String[] args) {
         PersonWithJob pwjob = new PersonWithJob("Joe", 30000);
