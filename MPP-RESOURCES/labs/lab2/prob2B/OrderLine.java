@@ -17,4 +17,8 @@ public class OrderLine {
     public String getName() {
         return name;
     }
+
+    public Order getOrder() {
+        return order;
+    }
 }
