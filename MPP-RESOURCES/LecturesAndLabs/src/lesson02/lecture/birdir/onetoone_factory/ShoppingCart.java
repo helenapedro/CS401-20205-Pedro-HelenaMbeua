@@ -1,21 +1,26 @@
 package LecturesAndLabs.src.lesson02.lecture.birdir.onetoone_factory;
+
 import java.util.*;
 
 public class ShoppingCart {
 	private Customer owner;
 	private List<Item> items = new ArrayList<>();;
-	public void addItem(Item item) {
-		items.add(item);
-	}
-	//package level
+
+	// package level
 	ShoppingCart(Customer cust) {
 		owner = cust;
 	}
+
+	public void addItem(Item item) {
+		items.add(item);
+	}
+
 	public List<Item> getItems() {
 		return items;
 	}
+
 	public Customer getOwner() {
 		return owner;
 	}
-	
+
 }

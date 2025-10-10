@@ -13,7 +13,7 @@ public class ShoppingCart {
 	ShoppingCart() {
 		items = new ArrayList<Item>();
 	}
-	
+
 	public List<Item> getItems() {
 		return items;
 	}
