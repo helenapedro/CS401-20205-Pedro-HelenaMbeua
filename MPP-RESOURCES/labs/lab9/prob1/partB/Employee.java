@@ -1,4 +1,6 @@
-package LecturesAndLabs.src.lesson09.labs.prob1.partC;
+package labs.lab9.prob1.partB;
+
+import java.util.ArrayList;
 
 public class Employee {
 	private String name;
@@ -25,13 +27,11 @@ public class Employee {
 		return "(" + name + ", " + salary + ")";
 	}
 	
-	@Override
-	public boolean equals(Object ob) {
-		if(ob == null) return false;
-		if(!(ob instanceof Employee)) return false;
-		Employee emp = (Employee)ob;
-		return emp.name.equals(name) && emp.salary == salary;
+	public boolean equals(Employee e) {
+		return e.name.equals(name) && e.salary == salary;
 	}
-	
-	
+//	public boolean equals(Object ob) {
+//		Employee e = (Employee)ob;
+//		return e.name.equals(name) && e.salary == salary;
+//	}
 }

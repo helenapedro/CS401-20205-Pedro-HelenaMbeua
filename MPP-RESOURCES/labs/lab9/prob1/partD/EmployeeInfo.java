@@ -1,4 +1,4 @@
-package LecturesAndLabs.src.lesson09.labs.prob1.partD;
+package labs.lab9.prob1.partD;
 
 import java.util.ArrayList;
 import java.util.HashMap;

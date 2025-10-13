@@ -1,4 +1,4 @@
-package lesson09.labs.prob1.partB;
+package LecturesAndLabs.src.lesson09.labs.prob1.partB;
 
 import java.util.ArrayList;
 import java.util.List;

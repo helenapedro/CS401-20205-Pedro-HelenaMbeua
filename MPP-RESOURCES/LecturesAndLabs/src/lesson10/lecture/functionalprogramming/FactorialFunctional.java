@@ -1,4 +1,4 @@
-package lesson10.lecture.functionalprogramming;
+package LecturesAndLabs.src.lesson10.lecture.functionalprogramming;
 
 public class FactorialFunctional {
 	/** Assumes n is a non-negative integer */

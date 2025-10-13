@@ -1,4 +1,4 @@
-package LecturesAndLabs.src.lesson09.labs.prob1.partD;
+package labs.lab9.prob1.partD;
 
 public class Employee {
 	private String name;

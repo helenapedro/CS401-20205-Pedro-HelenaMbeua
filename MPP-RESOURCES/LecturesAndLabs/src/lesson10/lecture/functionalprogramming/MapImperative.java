@@ -1,10 +1,6 @@
-package lesson10.lecture.functionalprogramming;
+package LecturesAndLabs.src.lesson10.lecture.functionalprogramming;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
+import java.util.*;
 
 public class MapImperative {
 	List<String> uppercaseList;
