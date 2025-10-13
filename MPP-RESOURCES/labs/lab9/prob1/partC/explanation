@@ -1,0 +1,2 @@
+Problem: Employee already overrides equals(Object), but not hashCode().
+Any solution that uses a hash-based structure needs a consistent hashCode.

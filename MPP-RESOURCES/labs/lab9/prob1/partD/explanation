@@ -1,0 +1,5 @@
+Problems: Employee.equals and hashCode include the mutable field visited.
+EmployeeInfo.removeDuplicates stores Employee as a key in a HashMap, and
+then later does tracker.get(e).setVisited(true). Changing a field that
+participates in hashCode() after the object is used as a key breaks the map’s
+invariants and causes subtle failures.

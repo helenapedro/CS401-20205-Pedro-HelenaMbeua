@@ -1,0 +1,20 @@
+Problem: equals is overloaded, not overridden.
+
+What’s wrong:
+- Employee declares equals(Employee e) instead of equals(Object o).
+- Java collections call equals(Object), not the overload.
+- As a result, collection operations fall back to reference equality
+  and treat two logically equal employees as different.
+
+Minimal fix:
+- Implement a real override with the correct signature and logic:
+     @Override
+    public boolean equals(Object ob) {
+  		Employee e = (Employee)ob;
+  		return e.name.equals(name) && e.salary == salary;
+    }
+- Also implement hashCode() consistently with equals.
+        @Override
+        public int hashCode() {
+            return Objects.hash(name, salary);
+        }

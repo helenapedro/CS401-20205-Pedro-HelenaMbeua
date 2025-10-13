@@ -1,6 +1,7 @@
 package labs.lab9.prob1.partB;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Employee {
 	private String name;
@@ -30,7 +31,8 @@ public class Employee {
 	public boolean equals(Employee e) {
 		return e.name.equals(name) && e.salary == salary;
 	}
-//	public boolean equals(Object ob) {
+
+    //	public boolean equals(Object ob) {
 //		Employee e = (Employee)ob;
 //		return e.name.equals(name) && e.salary == salary;
 //	}
