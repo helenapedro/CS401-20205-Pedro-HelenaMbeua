@@ -1,4 +1,4 @@
-package labs.lab10.shortanswer.prob1B;
+package labs.lab10.prob1.prob1B;
 
 import java.util.function.Supplier;
 
