@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 public class Good {
 	public static void main(String[] args) {
 		  Good g = new Good();
-		  System.out.println(g.countNumberFriendsStartingWithB("B"));
+		  System.out.println(g.countNumberFriendsStartingWithB("before.B"));
 		  System.out.println(g.listEditorsNamesStartingWithNUpperCase("N"));
 	  }
 	

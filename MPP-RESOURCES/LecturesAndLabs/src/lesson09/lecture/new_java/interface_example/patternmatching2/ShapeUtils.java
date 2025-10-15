@@ -13,7 +13,7 @@ public class ShapeUtils {
 	public static String describe(Shape shape) {
         return switch (shape) {
             case Circle c -> "Circle with radius: " + c.radius();
-            case Rectangle r -> "Rectangle with area: " + (r.length() * r.width());
+            case Rectangle r -> "before.Rectangle with area: " + (r.length() * r.width());
             case Square s -> "Square with area: " + (s.side() * s.side());
         };
     }
@@ -24,7 +24,7 @@ public class ShapeUtils {
         Shape s3 = new Square(5);
 
         System.out.println(describe(s1)); // Circle with radius: 2.0
-        System.out.println(describe(s2)); // Rectangle with area: 12.0
+        System.out.println(describe(s2)); // before.Rectangle with area: 12.0
         System.out.println(describe(s3)); // Square with area: 25.0
     }
 }

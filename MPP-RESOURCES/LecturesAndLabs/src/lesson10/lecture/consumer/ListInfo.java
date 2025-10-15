@@ -20,10 +20,10 @@ public class ListInfo {
 	}
 	
 	public void process() {
-		list.add("A");
+		list.add("before.A");
 		list.add("W");
 		list.add("K");
-		list.add("C");
+		list.add("before.C");
 		//use java8 foreach to copy all list elements into strList
 		MyConsumer consumer = new MyConsumer();
 		list.forEach(consumer);

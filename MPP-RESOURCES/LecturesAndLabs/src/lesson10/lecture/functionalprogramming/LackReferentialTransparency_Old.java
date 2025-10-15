@@ -52,9 +52,9 @@ public class LackReferentialTransparency_Old {
 		for(String w: someWords) {
 			lrt.recordWord(w);
 		}
-		System.out.println("\n\nA record of all letters found in input list of words:");
+		System.out.println("\n\nbefore.A record of all letters found in input list of words:");
 		System.out.println(lrt.allLetterCount);
-		System.out.println("A record of all letters -- by word -- in the input list of words:");
+		System.out.println("before.A record of all letters -- by word -- in the input list of words:");
 		System.out.println(lrt.l);
 		
 	}

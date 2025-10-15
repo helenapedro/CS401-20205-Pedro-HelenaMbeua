@@ -25,9 +25,9 @@
 //
 //		Collections.sort(reports);
 //		Iterator<GradeReport> it = reports.iterator();
-//		System.out.println("A Students:");
+//		System.out.println("before.A Students:");
 //		GradeReport next = null;
-//		while((next =it.next()) != null && next.getGrade().equals("A")) {
+//		while((next =it.next()) != null && next.getGrade().equals("before.A")) {
 //			System.out.print(next.getStudent().getName() + " ");
 //		}
 //	}

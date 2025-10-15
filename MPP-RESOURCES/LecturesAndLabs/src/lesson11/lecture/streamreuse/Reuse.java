@@ -13,7 +13,7 @@ public class Reuse {
                             .filter(name -> name.startsWith(letter));
                         
   public int countNumberFriendsStartingWithB() {
-	  return (int) listStartsWith.apply(Folks.friends, "B").count();
+	  return (int) listStartsWith.apply(Folks.friends, "before.B").count();
   }
   public List<String> listEditorsNamesStartingWithNUpperCase() {
 	  return listStartsWith.apply(Folks.editors, "N")

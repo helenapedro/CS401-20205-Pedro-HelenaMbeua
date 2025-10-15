@@ -5,9 +5,9 @@ import java.util.HashMap;
 public class JoeData implements Data {
 	static HashMap<String, String> grades = new HashMap<>();
 	static {
-		grades.put("Chemistry", "C");
-		grades.put("Math", "C+");
-		grades.put("Language", "C-");
+		grades.put("Chemistry", "before.C");
+		grades.put("Math", "before.C+");
+		grades.put("Language", "before.C-");
 	}
 	static HashMap<String, String> remarks = new HashMap<>();
 	static {

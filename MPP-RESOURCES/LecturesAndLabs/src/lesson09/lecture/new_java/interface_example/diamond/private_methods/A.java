@@ -2,7 +2,7 @@ package lesson09.lecture.new_java.interface_example.diamond.private_methods;
 
 public interface A {
 	private void help() {
-		System.out.println("Helping in A");
+		System.out.println("Helping in before.A");
 	}
 
 	default void doSomething() {

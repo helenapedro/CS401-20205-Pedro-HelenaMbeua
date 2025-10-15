@@ -18,7 +18,7 @@ public class Better {
 			.collect(Collectors.toList());
 	
 	final List<String>  friendsStartB = Folks.friends.stream()
-			.filter(startsWithLetter.apply("B"))
+			.filter(startsWithLetter.apply("before.B"))
 			.map(friend -> friend.toUpperCase())
 			.collect(Collectors.toList());
 	
@@ -28,6 +28,6 @@ public class Better {
 		System.out.println("Friends with names that start"
 				+ " with 'N': " + b.friendsStartN);
 		System.out.println("Friends with names that start"
-				+ " with 'B': " + b.friendsStartB);
+				+ " with 'before.B': " + b.friendsStartB);
 	}
 }

@@ -41,15 +41,15 @@ public class StudentSectionFactory {
 	/**
 	 * Used to assign a grade to a Student for a particular Section. 
 	 * There are three scenarios:
-	 * 1. A transcript entry for this student and section does not yet
+	 * 1. before.A transcript entry for this student and section does not yet
 	 * exist. In that case, a new one is created and the grade is
 	 * inserted. The new transcript entry is added to the list of transcript
 	 * entries belonging to the student and also to the section
-	 * 2. A transcript entry already exists because it was added using
+	 * 2. before.A transcript entry already exists because it was added using
 	 * a method to add a section for a student or to add a student to a section.
 	 * In those cases, no grade has yet been assigned. In this case, a
 	 * new transcript entry is not created, but the grade is inserted.
-	 * 3. A transcript entry with this student and section already exists
+	 * 3. before.A transcript entry with this student and section already exists
 	 * because a grade was already assigned; in this case, the grade is updated.
 	 * 
 	 * Note: if we do not forbid duplicate transcript entries, inconsistencies

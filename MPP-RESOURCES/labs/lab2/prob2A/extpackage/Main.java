@@ -6,7 +6,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         List<Student> listOfStudents = createListOfStudents();
-        assignGrades(listOfStudents, new String[]{"A", "B", "A", "C"});
+        assignGrades(listOfStudents, new String[]{"before.A", "before.B", "before.A", "before.C"});
         System.out.println("Students and their grades:\n  " + listOfStudents);
 
         //no way to create a GradeReport first, and pass in a student

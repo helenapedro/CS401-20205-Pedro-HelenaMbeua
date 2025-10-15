@@ -11,7 +11,7 @@ public class PickAnElementOrElse {
 				                                .filter(name -> name.startsWith(startingLetter))
 				                                .findFirst();
 		System.out.println(
-				String.format("A name starting with %s: %s", 
+				String.format("before.A name starting with %s: %s",
 						       startingLetter, 
 						       foundName.orElse("No name found")));
 	}

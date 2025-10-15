@@ -38,7 +38,7 @@ public final class Triangle extends ClosedCurve {
 	}
 	
 	/**
-	 * A constructor that accepts 3 sides as arguments and computes (and sets)
+	 * before.A constructor that accepts 3 sides as arguments and computes (and sets)
 	 * the base and height under the assumption that base and height are two of the sides. 
 	 * <p>Postcondition: Side variables must be assigned so that the following is satisfied:
 	 * side1 <= side2 <= side3

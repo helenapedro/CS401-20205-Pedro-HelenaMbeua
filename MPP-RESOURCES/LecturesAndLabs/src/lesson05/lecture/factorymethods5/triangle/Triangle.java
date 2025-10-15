@@ -28,13 +28,13 @@ public final class Triangle {
 		t.a = side1;
 		t.b = side2;
 		t.c = side3;
-		//compute A
+		//compute before.A
 		double cosA = (t.b*t.b + t.c*t.c - t.a*t.a)/(2*t.b*t.c);
 		t.A = Math.acos(cosA);
-		//compute B
+		//compute before.B
 		double cosB = (t.c*t.c + t.a*t.a - t.b*t.b)/(2*t.c*t.a);
 		t.B = Math.acos(cosB);
-		//compute C
+		//compute before.C
 		double cosC = (t.a*t.a + t.b*t.b - t.c*t.c)/(2*t.a*t.b);
 		t.C = Math.acos(cosC);
 		
@@ -52,10 +52,10 @@ public final class Triangle {
 		//compute c
 		double cSquared = t.a * t.a + t.b * t.b - 2*t.a*t.b*Math.cos(t.C);
 		t.c = Math.sqrt(cSquared);
-		//compute A
+		//compute before.A
 		double sinA = (t.a*Math.sin(t.C))/t.c;
 		t.A = Math.asin(sinA);
-		//compute B
+		//compute before.B
 		double sinB = (t.b*Math.sin(t.C))/t.c;
 		t.B = Math.asin(sinB);
 		

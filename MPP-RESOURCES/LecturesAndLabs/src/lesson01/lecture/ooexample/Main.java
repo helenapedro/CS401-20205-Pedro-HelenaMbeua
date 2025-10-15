@@ -26,21 +26,21 @@ public class Main {
 		emps[2].createNewRetirement(9000);
 		
 		String n = System.getProperty("line.separator");
-		String choices ="  A. See a report of all accounts." + n +
-						"  B. Make a deposit." + n +
-						"  C. Make a withdrawal." + n +
-						"Make a selection (A/B/C): ";
+		String choices ="  before.A. See a report of all accounts." + n +
+						"  before.B. Make a deposit." + n +
+						"  before.C. Make a withdrawal." + n +
+						"Make a selection (before.A/before.B/before.C): ";
 		Scanner sc = new Scanner(System.in);
 		System.out.print(choices);
 		String ch = sc.next();
 		System.out.println();
-		if(ch.equals("A")){
+		if(ch.equals("before.A")){
 			handleReports();
 		}
-		else if(ch.equals("B")) { //"B"
+		else if(ch.equals("before.B")) { //"before.B"
 			handleDeposits();
 		}
-		else { //"C"
+		else { //"before.C"
 			handleWithdrawals();
 		}
 	}

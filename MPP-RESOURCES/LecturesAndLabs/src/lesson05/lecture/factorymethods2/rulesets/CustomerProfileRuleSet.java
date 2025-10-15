@@ -12,7 +12,7 @@ import lesson05.lecture.factorymethods2.gui.ProfileWindow;
  * 2. favorite restaurant cannot equal favorite movie
  * 3. id must be numeric
  * 4. firstname and lastname fields may not contain spaces or 
- * characters other than a-z, A-Z.
+ * characters other than a-z, before.A-Z.
  *
  */
 public class CustomerProfileRuleSet implements RuleSet {
@@ -60,12 +60,12 @@ public class CustomerProfileRuleSet implements RuleSet {
 		for(char c: fname) {
 			if(!Util.isInRangeAtoZ(c) && !Util.isInRangeatoz(c)) 
 				throw new RuleException("All characters in first name must be "
-						+ "in range A-Z or a-z");
+						+ "in range before.A-Z or a-z");
 		}
 		for(char c: lname) {
 			if(!Util.isInRangeAtoZ(c) && !Util.isInRangeatoz(c)) 
 				throw new RuleException("All characters in lasst name must be "
-						+ "in range A-Z or a-z");
+						+ "in range before.A-Z or a-z");
 		}
 	}
 

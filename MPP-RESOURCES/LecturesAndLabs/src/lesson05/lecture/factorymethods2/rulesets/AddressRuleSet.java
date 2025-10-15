@@ -11,7 +11,7 @@ import lesson05.lecture.factorymethods2.gui.AddrWindow;
  *  1. All fields must be nonempty 
  *  2. ID field must be numeric 
  *  3. Zip must be numeric with exactly 5 digits 
- *  4. State must have exactly two characters in the range A-Z 5. 
+ *  4. State must have exactly two characters in the range before.A-Z 5.
  *  5. ID field may not equal zip field.
  *
  */
@@ -65,7 +65,7 @@ public class AddressRuleSet implements RuleSet {
 		if(state.length() != 2) throw new RuleException("State field must have two characters");
 		if(!Util.isInRangeAtoZ(state.charAt(0)) 
 				|| !Util.isInRangeAtoZ(state.charAt(1))) {
-			throw new RuleException("Characters is state field must be in range A-Z");
+			throw new RuleException("Characters is state field must be in range before.A-Z");
 		}
 	}
 	

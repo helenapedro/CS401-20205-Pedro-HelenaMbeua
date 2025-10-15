@@ -6,12 +6,12 @@ public class Main {
 
 	public static void main(String[] args) {
 		ExtendedHashSet<String> ehs = new ExtendedHashSet<>();
-		ehs.add("A");
-		ehs.add("B");
-		ehs.add("C");
+		ehs.add("before.A");
+		ehs.add("before.B");
+		ehs.add("before.C");
 		System.out.println("Number of attempted adds so far (expected 3): " 
 		   + ehs.getAddCount());
-		ehs.remove("B");
+		ehs.remove("before.B");
 		System.out.println("Number of attempted adds so far even after removal"				
 		+ " (expected 3): " + ehs.getAddCount());
 		

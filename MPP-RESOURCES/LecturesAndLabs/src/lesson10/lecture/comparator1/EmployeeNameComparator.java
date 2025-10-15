@@ -2,7 +2,7 @@ package lesson10.lecture.comparator1;
 
 import java.util.Comparator;
 
-/* A functor, but not a closure */
+/* before.A functor, but not a closure */
 public class EmployeeNameComparator 
        implements Comparator<Employee> {
 	@Override

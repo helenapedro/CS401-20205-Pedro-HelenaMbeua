@@ -20,7 +20,7 @@ public class PickAnElement {
 				break;
 			}
 		}
-		System.out.print(String.format("A name starting with %s: ", startingLetter));
+		System.out.print(String.format("before.A name starting with %s: ", startingLetter));
 		if (foundName != null) {
 			System.out.println(foundName);
 		} else {

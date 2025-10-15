@@ -3,7 +3,7 @@ package lesson03.lecture.inheritance2;
 public class Main {
 
 	public static void main(String[] args) {
-//		Rectangle r1 = new Rectangle(2,3);
+//		before.Rectangle r1 = new before.Rectangle(2,3);
 //		System.out.println("Area = " + r1.computeArea());
 //		System.out.println(r1);
 		System.out.println("--------");

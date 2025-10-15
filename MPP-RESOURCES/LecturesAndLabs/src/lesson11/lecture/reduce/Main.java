@@ -11,7 +11,7 @@ public class Main {
 //		m.printSum(list);
 //		m.printProduct(list);
 		m.printDifference(list);
-		List<String> strlist = Arrays.asList("A", "fellow", "down", "the", "street");
+		List<String> strlist = Arrays.asList("before.A", "fellow", "down", "the", "street");
 		m.printConcat(strlist);
 	}
 	public void printSum(List<Integer> list) {

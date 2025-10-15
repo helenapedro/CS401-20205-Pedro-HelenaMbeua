@@ -19,23 +19,23 @@ public class Main {
 		StudentSectionFactory.addSectionForStudent(allen, bio2);
 		StudentSectionFactory.addSectionForStudent(allen, math);
 		//set grades
-		StudentSectionFactory.newTranscriptEntry(bob,bio1, "A");
-		StudentSectionFactory.newTranscriptEntry(bob,math, "B");
-		StudentSectionFactory.newTranscriptEntry(tim,bio1, "A-");
-		StudentSectionFactory.newTranscriptEntry(tim,math, "B+");
-		StudentSectionFactory.newTranscriptEntry(allen,bio2, "C");
-		StudentSectionFactory.newTranscriptEntry(allen,math, "A");
+		StudentSectionFactory.newTranscriptEntry(bob,bio1, "before.A");
+		StudentSectionFactory.newTranscriptEntry(bob,math, "before.B");
+		StudentSectionFactory.newTranscriptEntry(tim,bio1, "before.A-");
+		StudentSectionFactory.newTranscriptEntry(tim,math, "before.B+");
+		StudentSectionFactory.newTranscriptEntry(allen,bio2, "before.C");
+		StudentSectionFactory.newTranscriptEntry(allen,math, "before.A");
 		
 		System.out.println(bob.getTranscript());
 		System.out.println("Grades for math section:\n " + m.getGrades(math));
 		System.out.println("Courses that Tim took: " + m.getCourseNames(tim));
-		System.out.println("Students who got A's: " + m.getStudentsWith("A"));
+		System.out.println("Students who got before.A's: " + m.getStudentsWith("before.A"));
 		
-		//change Bob's bio1 grade from A to B
-		StudentSectionFactory.newTranscriptEntry(bob, bio1, "B");
+		//change Bob's bio1 grade from before.A to before.B
+		StudentSectionFactory.newTranscriptEntry(bob, bio1, "before.B");
 		
-		//list of "A" students has changed
-		System.out.println("Students who got A's: " + m.getStudentsWith("A"));
+		//list of "before.A" students has changed
+		System.out.println("Students who got before.A's: " + m.getStudentsWith("before.A"));
 	}
 	
 	private List<String> getGrades(Section s) {

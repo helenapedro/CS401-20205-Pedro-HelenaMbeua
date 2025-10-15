@@ -14,14 +14,14 @@ public class Advanced {
 
 	final List<String> friendsStartN = listStartsWith.apply(Folks.friends, "N");
 
-	final List<String> friendsStartB = listStartsWith.apply(Folks.friends, "B");
+	final List<String> friendsStartB = listStartsWith.apply(Folks.friends, "before.B");
 
 	public static void main(String[] args) {
 		Advanced adv = new Advanced();
 
 		System.out.println("Friends with names that start" + " with 'N': "
 				+ adv.friendsStartN);
-		System.out.println("Friends with names that start" + " with 'B': "
+		System.out.println("Friends with names that start" + " with 'before.B': "
 				+ adv.friendsStartB);
 	}
 	

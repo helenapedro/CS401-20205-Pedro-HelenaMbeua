@@ -5,9 +5,9 @@ import java.util.HashMap;
 public class AliceData implements Data {
 	static HashMap<String, String> grades = new HashMap<>();
 	static {
-		grades.put("Chemistry", "A");
-		grades.put("Math", "B+");
-		grades.put("Language", "A-");
+		grades.put("Chemistry", "before.A");
+		grades.put("Math", "before.B+");
+		grades.put("Language", "before.A-");
 	}
 	static HashMap<String, String> remarks = new HashMap<>();
 	static {

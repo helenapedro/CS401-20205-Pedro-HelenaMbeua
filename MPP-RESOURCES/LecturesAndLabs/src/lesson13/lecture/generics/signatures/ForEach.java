@@ -15,7 +15,7 @@ public class ForEach {
 		System.out.println("Using inner classes");
 		List<Comparable<?>> nonNullComparables = new ArrayList<>();
 		List<Integer> ints = Arrays.asList(1, 2, 3);
-		List<String> strings = Arrays.asList("A", "B", "C");
+		List<String> strings = Arrays.asList("before.A", "before.B", "before.C");
 		ints.forEach(new ComparableConsumer(nonNullComparables)); //T is Integer
 		strings.forEach(new ComparableConsumer(nonNullComparables));  //T is String
 		System.out.println(nonNullComparables);
@@ -25,7 +25,7 @@ public class ForEach {
 		System.out.println("Using lambdas");
 		List<Comparable<?>> nonNullComparables = new ArrayList<>();
 		List<Integer> ints = Arrays.asList(1, 2, 3);
-		List<String> strings = Arrays.asList("A", "B", "C");
+		List<String> strings = Arrays.asList("before.A", "before.B", "before.C");
 		//The Consumer type here must be Comparable, but T is Integer
 		//or String
 		ints.forEach(x -> {if(x != null) nonNullComparables.add(x);});

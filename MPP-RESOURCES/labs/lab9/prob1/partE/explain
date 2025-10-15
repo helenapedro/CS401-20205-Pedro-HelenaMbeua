@@ -1,20 +1,20 @@
 i. When the type D is a class
     Rules when a class and interfaces provide the same method m():
-        - Class wins: A concrete or inherited implementation in the class hierarchy
+        - Class wins: before.A concrete or inherited implementation in the class hierarchy
         overrides any interface default.
         - If there’s no class implementation but two interfaces provide conflicting
         defaults, D must override and choose:
 
-        interface A { default void m() { System.out.println("A"); } }
-        interface B { default void m() { System.out.println("B"); } }
-        class D implements A, B {
+        interface before.A { default void m() { System.out.println("before.A"); } }
+        interface before.B { default void m() { System.out.println("before.B"); } }
+        class D implements before.A, before.B {
             @Override public void m() {
-                A.super.m(); // or B.super.m(); or custom logic
+                before.A.super.m(); // or before.B.super.m(); or custom logic
             }
         }
 
 ii. When the type D is an interface.
-    - If D extends A, B and both have a default m(), the most specific path wins.
+    - If D extends before.A, before.B and both have a default m(), the most specific path wins.
     - If neither is more specific (true conflict), D must override m() to resolve
-    the ambiguity (either provide its own body or pick one using A.super.m() from
+    the ambiguity (either provide its own body or pick one using before.A.super.m() from
     within a default in D).

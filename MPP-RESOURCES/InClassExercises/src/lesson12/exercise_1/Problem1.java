@@ -5,7 +5,7 @@ import java.util.stream.*;
 public class Problem1 {
 		
 
-	//A list of Customers whose checking account balance is > 50, sorted by customer's last name
+	//before.A list of Customers whose checking account balance is > 50, sorted by customer's last name
 	public static List<Customer> specialAccounts(List<Account> accounts) {
 		return accounts.stream().filter(a -> a.getBalance() > 50)
 				 .map((Account a) -> a.getCustomer())

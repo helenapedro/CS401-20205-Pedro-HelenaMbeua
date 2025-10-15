@@ -2,7 +2,7 @@ Case2: Using Composition
     Here, a Cylinder is not a Circle (though it has one as a base),
     so composition models reality more accurately.
 
-    Inheritance should only be used when there’s a true IS-A relationship
+    Inheritance should only be used when there’s a true IS-before.A relationship
     and when the subclass can safely substitute for the superclass without
     breaking behavior (Liskov Substitution Principle).
 

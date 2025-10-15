@@ -16,7 +16,7 @@ Joe Smith
    severity: 1
 
    reportedBy: Corazza
-   classname: lesson10.labsolns.prob1.javapackage.Rectangle
+   classname: lesson10.labsolns.prob1.javapackage.before.Rectangle
    description: computePerimeter incorrect
    severity: 2
 

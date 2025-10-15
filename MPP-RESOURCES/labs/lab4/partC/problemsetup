@@ -4,13 +4,13 @@
         Salaried -> paid a fixed monthly salary
         Commissioned -> paid baseSalary + commission × (sum of all orders sold in the previous month)
 
-All employees need a Paycheck. A paycheck includes:
+All employees need a Paycheck. before.A paycheck includes:
     grossPay,
     FICA, state, local, medicare, socialSecurity ,deductions,
     netPay
 
 The Template Method pattern means:
-    A superclass (abstract) defines the skeleton of an algorithm.
+    before.A superclass (abstract) defines the skeleton of an algorithm.
     Subclasses override only the variable parts.
 
     - the Employee class is abstract.

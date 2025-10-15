@@ -28,9 +28,9 @@ public class Main {
 		};
 
 		Building[] bldgs = {
-				new Building("A", 150, 400),
-				new Building("B", 175, 900),
-				new Building("C", 150, 300),
+				new Building("before.A", 150, 400),
+				new Building("before.B", 175, 900),
+				new Building("before.C", 150, 300),
 				new Building("D", 175, 775)
 		};
 
