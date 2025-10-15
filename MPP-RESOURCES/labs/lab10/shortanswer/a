@@ -1,0 +1,29 @@
+1. Short answer
+    a. For each lambda expression below, name the parameters and the free variables.
+
+i. Runnable r = () -> {
+    int[][] products = new int[s][t];
+    for (int i = 0; i < s; i++) {
+        for (int j = i + 1; j < t; j++) {
+           products[i][j] = i * j;
+        }
+    }
+};
+Parameters = none
+    - The parentheses are empty, which means the lambda takes no parameters.
+Free variables = s and t
+    - Both s and t are not declared inside the lambda and not parameters.
+
+ii.Comparator<String> comp = (s, t) → {
+    if(ignoreCase == true) {
+        return s.compareToIgnoreCase(t);
+    } else {
+        return s.compareTo(t);
+    }
+}
+Parameters = s and t
+    - s and t are declared inside the lambda and they receive value
+    every time the compare method is called
+Free variables = ignoreCase
+    - ignoreCase is not declared inside the lambda and not parameter
+

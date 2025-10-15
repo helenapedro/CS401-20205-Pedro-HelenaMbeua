@@ -1,0 +1,4 @@
+package labs.lab9.prob2;
+
+public record Add(Expr left, Expr right) implements Expr {
+}
