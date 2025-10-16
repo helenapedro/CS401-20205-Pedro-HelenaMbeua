@@ -1,9 +1,12 @@
-package lesson9.labs.prob2;
+package labs.lab11.part1.prob1;
 import java.time.LocalDate;
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 public class Main {
 	List<Order> orders;
+
 	public static void main(String[] args) {
 		Main m = new Main();
 		m.loadOrderData();
@@ -15,6 +18,10 @@ public class Main {
 	private void showAllOrderItems() {
 		System.out.println("\n==============\nAll order items:");
 		//implement
+        orders.stream()
+                .map(Order::getOrderItems)
+                .flatMap(List::stream)
+                .forEach(System.out::println);
 	}
 	
 	private void displayAllOrders() {
@@ -23,10 +30,11 @@ public class Main {
 	
 	private void loadOrderData() {
 		orders = new ArrayList<>();
+
 		Order o = new Order(LocalDate.of(2011, 10, 5), "10-210", "1001", 2, 11);
 		o.addOrderItem("1002", 1, 23);
 		o.addOrderItem("1003", 1, 45);
-		orders.add(o);
+        orders.add(o);
 		
 		o = new Order(LocalDate.of(2001, 11, 15), "11-220", "1015", 2, 33);
 		o.addOrderItem("1016", 3, 15);

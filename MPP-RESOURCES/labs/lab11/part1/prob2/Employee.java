@@ -1,9 +1,7 @@
-package lesson9.labs.prob3;
+package labs.lab11.part1.prob2;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 
 public class Employee {
