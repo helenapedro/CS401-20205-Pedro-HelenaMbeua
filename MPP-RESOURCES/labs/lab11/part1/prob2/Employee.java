@@ -45,6 +45,7 @@ public class Employee {
 				add(new Employee("Rich", 88000));
 			}
 		};
+
         var sorted = list.stream()
                 .sorted(Comparator.comparing(Employee::getName)
                         .thenComparing(Comparator.comparing(Employee::getSalary).reversed()))
