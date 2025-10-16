@@ -1,11 +1,10 @@
-package finalprep;
+package labs.lab11.part2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import labs.lab9.prob2.Add;
+
+import java.util.*;
 
 public class Main {
-
     public static void main(String[] args) {
         Address add1 = new Address("500 E Broadway Ave", "Fairfield", "IA", 52556);
         Address add2 = new Address("103 W Adams Ave", "Fairfield", "IA", 52556);
@@ -26,8 +25,12 @@ public class Main {
         ));
 
         // Find all the students that are taking a given course
+        List<Student> cs401Students = Util.studentsTakingGivenCourse(students, "CS401");
+        cs401Students.forEach(s -> System.out.println(s.getName()));
 
         // Get the address of any student that is taking a given course (e.g., "CS401")
+        Optional<Address> cs401StudentsAddress = Util.anyAddressForCourse(students, "CS401");
+        System.out.println(cs401StudentsAddress);
 
         // Calculate the GPA for a given student
 

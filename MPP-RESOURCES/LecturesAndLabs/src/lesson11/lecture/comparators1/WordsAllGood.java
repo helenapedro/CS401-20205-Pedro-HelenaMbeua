@@ -13,25 +13,30 @@ import java.util.function.*;
  * the argument to comparing is a lambda; in goodSort2,
  * the argument to comparing is a method reference.
  * 
- */  
+ */
 public class WordsAllGood {
 	public static void main(String[] args) {
 		goodSort1();
 		goodSort2();
 	}
-	
+
 	public static void goodSort1() {
 		List<String> words = Arrays.asList("Tom", "Joseph", "Richard");
-		Stream<String> longestFirst  
-		    = words.stream().sorted(Comparator.comparing(String::length).reversed());
-		System.out.println(longestFirst .collect(Collectors.toList()));
+
+		Stream<String> longestFirst = words.stream()
+				.sorted(Comparator.comparing(String::length)
+						.reversed());
+
+		System.out.println(longestFirst.collect(Collectors.toList()));
 	}
-	
+
 	public static void goodSort2() {
 		Function<String, Integer> sortByLength = x -> x.length();
+
 		List<String> words = Arrays.asList("Tom", "Joseph", "Richard");
-		Stream<String> longestFirst  
-		    = words.stream().sorted(Comparator.comparing(sortByLength).reversed());
-		System.out.println(longestFirst .collect(Collectors.toList()));
+
+		Stream<String> longestFirst = words.stream().sorted(Comparator.comparing(sortByLength).reversed());
+
+		System.out.println(longestFirst.collect(Collectors.toList()));
 	}
 }

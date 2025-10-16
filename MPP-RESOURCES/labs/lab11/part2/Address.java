@@ -1,10 +1,7 @@
-package finalprep;
+package labs.lab11.part2;
 
 public class Address {
-
-	String street;
-	String city;
-	String state;
+	String street, city, state;
 	int zipcode;
 
 	public Address(String street, String city, String state, int zipcode) {
@@ -15,7 +12,17 @@ public class Address {
 		this.zipcode = zipcode;
 	}
 
-	public String getStreet() {
+    @Override
+    public String toString() {
+        return "Address{" +
+                "street='" + street + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zipcode=" + zipcode +
+                '}';
+    }
+
+    public String getStreet() {
 		return street;
 	}
 
@@ -46,6 +53,4 @@ public class Address {
 	public void setZipcode(int zipcode) {
 		this.zipcode = zipcode;
 	}
-
-
 }

@@ -1,15 +1,13 @@
-package finalprep;
+package labs.lab11.part2;
 
 import java.util.List;
 
 public class Student {
-
     public int id;
     public String name;
     public List<Double> grades;
     public List<Section> sections;
     public Address address;
-
 
     public Student(int id, String name, List<Double> grades, Address address) {
         this.id = id;
@@ -26,6 +24,14 @@ public class Student {
         this.sections = sections;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
@@ -34,11 +40,27 @@ public class Student {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
+    public List<Double> getGrades() {
+        return grades;
+    }
+
+    public void setGrades(List<Double> grades) {
+        this.grades = grades;
+    }
+
+    public List<Section> getSections() {
+        return sections;
+    }
+
+    public void setSections(List<Section> sections) {
+        this.sections = sections;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }

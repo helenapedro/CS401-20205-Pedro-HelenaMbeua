@@ -1,4 +1,4 @@
-package finalprep;
+package labs.lab11.part2;
 
 public class Section {
     private int id;

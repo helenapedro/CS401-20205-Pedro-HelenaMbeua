@@ -11,23 +11,24 @@ import java.util.stream.Stream;
 public class Test {
 	public static void main(String[] args) {
 		List<String> l = Arrays.asList("Bob", "Joe");
-		//usual way
+
+		// usual way
 		System.out.println(l.stream()
-				            .flatMap(x -> stringToCharStream(x))
-				            .collect(Collectors.toList()));
-		
-		//this is the same as composing map with default flatMap
+				.flatMap(x -> stringToCharStream(x))
+				.collect(Collectors.toList()));
+
+		// this is the same as composing map with default flatMap
 		System.out.println(l.stream()
-				            .map(x -> stringToCharStream(x)) //produces a stream of streams
-				            .flatMap((Stream<Character> st) -> st) //flattens to a single stream
-				            .collect(Collectors.toList()));
-		
+				.map(x -> stringToCharStream(x)) // produces a stream of streams
+				.flatMap((Stream<Character> st) -> st) // flattens to a single stream
+				.collect(Collectors.toList()));
+
 	}
-	
+
 	static Stream<Character> stringToCharStream(String s) {
 		char[] chars = s.toCharArray();
 		Character[] chs = new Character[s.length()];
-		for(int i = 0; i < s.length(); ++i) {
+		for (int i = 0; i < s.length(); ++i) {
 			chs[i] = chars[i];
 		}
 		return Stream.of(chs);
