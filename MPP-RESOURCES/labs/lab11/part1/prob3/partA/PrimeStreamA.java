@@ -2,6 +2,10 @@ package labs.lab11.part1.prob3.partA;
 
 import java.util.stream.Stream;
 
+/*
+A. Create an infinite stream of prime numbers using iterate (without using map or filter).
+*/
+
 public class PrimeStreamA {
     // Infinite stream of primes
     final Stream<Integer> primes = Stream.iterate(2, n -> nextPrime(n));
