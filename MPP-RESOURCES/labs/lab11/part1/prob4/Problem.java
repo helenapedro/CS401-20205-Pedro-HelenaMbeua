@@ -1,13 +1,16 @@
-package lesson9.labs.prob5;
+package labs.lab11.part1.prob4;
+
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
+
 public class Problem {
 	
 	//Returns a list of those strings which belong to both of the two input lists
 	public static List<String> elementsInBoth(List<String> list1, List<String> list2) {
 		//implement
-		return null;
+        return list1.stream()
+                .filter(list2::contains)
+                .toList();
 	}
 	
 	//Returns a list, in sorted order, of the zipcodes, of those Customers 
@@ -16,7 +19,13 @@ public class Problem {
 	//duplicate elements.
 	public static List<String> getZipsOfSpecialCustomers(List<Customer> list) {
 		//implement
-		return null;
+		return list.stream()
+                .filter(c -> c.getCity().length() >= 6)
+                .filter(c -> !c.getCity().toLowerCase().contains("e"))
+                .map(Customer::getZip)
+                .distinct()
+                .sorted()
+                .toList();
 	}
 	
 	
