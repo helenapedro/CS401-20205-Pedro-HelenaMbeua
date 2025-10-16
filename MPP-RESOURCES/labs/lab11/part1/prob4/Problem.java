@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Problem {
-	
 	//Returns a list of those strings which belong to both of the two input lists
 	public static List<String> elementsInBoth(List<String> list1, List<String> list2) {
 		//implement
