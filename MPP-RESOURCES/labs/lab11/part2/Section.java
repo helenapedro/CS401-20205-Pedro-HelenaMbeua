@@ -9,6 +9,13 @@ public class Section {
         this.courseCode = courseCode;
     }
 
+    @Override
+    public String toString() {
+        return "Section{" +
+                "courseCode='" + courseCode + '\'' +
+                '}';
+    }
+
     public int getId() {
         return id;
     }

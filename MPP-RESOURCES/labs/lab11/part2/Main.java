@@ -26,7 +26,7 @@ public class Main {
 
         // Find all the students that are taking a given course
         List<Student> cs401Students = Util.studentsTakingGivenCourse(students, "CS401");
-        cs401Students.forEach(s -> System.out.println(s.getName()));
+        cs401Students.forEach(System.out::println);
 
         // Get the address of any student that is taking a given course (e.g., "CS401")
         Optional<Address> cs401StudentsAddress = Util.anyAddressForCourse(students, "CS401");
@@ -48,8 +48,10 @@ public class Main {
 
         // Get a list of unique course names taken by students who live in a given city (e.g., "Fairfield")
 
+
         // Get a list of distinct addresses of students who are taking a specific course (e.g., "CS401")
 
         // Get a mapping of students' names to the list of courses they are taking
+        System.out.println(Util.getStudentListOfCourses(students));
     }
 }
