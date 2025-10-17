@@ -55,11 +55,13 @@ public class Main {
         System.out.println("Students In Section: " + Util.studentsInSection(students, 114));
 
         //  Get the names of students who have enrolled in more than a given number of courses (e.g., more than 2 courses)
+        System.out.println("Students enrollled in more than 2 courses: " + Util.getStudentsEnrolledInMoreCourses(students, 2));
 
         // Get a list of unique course names taken by students who live in a given city (e.g., "Fairfield")
-
+        System.out.println("Unique courses: " + Util.getUniqueCourses(students, "Fairfield"));
 
         // Get a list of distinct addresses of students who are taking a specific course (e.g., "CS401")
+        System.out.println("Distinct addresses: " + Util.getDistinctAddress(students, "CS401"));
 
         // Get a mapping of students' names to the list of courses they are taking
         System.out.println(Util.getStudentListOfCourses(students));

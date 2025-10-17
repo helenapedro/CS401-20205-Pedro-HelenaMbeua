@@ -68,7 +68,7 @@ public class Util {
     }
 
     //  Get the names of students who have enrolled in more than a given number of courses (e.g., more than 2 courses)
-    public List<String> getStudentsEnrolledInMoreCourses(List<Student> students, int x) {
+    public static List<String> getStudentsEnrolledInMoreCourses(List<Student> students, int x) {
         if (x < 0) throw new IllegalArgumentException("X < 0");
         return students.stream()
                 .filter(st -> st.getSections() != null && st.getSections().size() > x)
@@ -77,8 +77,9 @@ public class Util {
 
 
     // Get a list of unique course names taken by students who live in a given city (e.g., "Fairfield")
-    public List<String> getUniqueCourses(List<Student> students, String city) {
+    public static List<String> getUniqueCourses(List<Student> students, String city) {
         return students.stream()
+                .filter(st -> st.getSections() != null)
                 .filter(st -> city.equals(st.getAddress().getCity()))
                 .flatMap(st -> st.getSections().stream().map(Section::getCourseCode))
                 .distinct()
@@ -86,7 +87,7 @@ public class Util {
     }
 
     // Get a list of distinct addresses of students who are taking a specific course (e.g., "CS401")
-    public List<Address> getDistinctAddress(List<Student> students, String courseCode) {
+    public static List<Address> getDistinctAddress(List<Student> students, String courseCode) {
         return students.stream()
                 .filter(st -> st.getSections()!=null && !st.getSections().stream()
                         .filter(sec -> courseCode.equals(sec.getCourseCode())).toList().isEmpty()
