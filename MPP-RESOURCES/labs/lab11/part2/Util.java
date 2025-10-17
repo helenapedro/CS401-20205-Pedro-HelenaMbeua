@@ -37,7 +37,13 @@ public class Util {
     }
 
     // Get a list of all unique courses taken by students
-
+    public static List<String> getAllUniqueCourses(List<Student> students) {
+        return students.stream()
+                .filter(st -> st.getSections() != null)
+                .flatMap(st -> st.getSections().stream().map(Section::getCourseCode))
+                .distinct()
+                .toList();
+    }
 
     // Find all students who live in a given city (e.g., "Fairfield") sorted in alphabetical order
     public static List<Student> getByCitySorted(List<Student> students, String city) {
@@ -48,9 +54,18 @@ public class Util {
     }
 
     // Count the number of students enrolled in a specific course (e.g., "CS401")
+    public static long countStudentsInCourse(List<Student> students, String courseCode) {
+        return studentsTakingGivenCourse(students, courseCode).size();
+    }
 
     // Get a list of students in a specific section
-
+    public static List<Student> studentsInSection(List<Student> students, int sectionId) {
+        return students.stream()
+                .filter(st -> st.getSections()!=null && !st.getSections().stream()
+                        .filter(sec -> sectionId == sec.getId()).toList().isEmpty()
+                )
+                .toList();
+    }
 
     //  Get the names of students who have enrolled in more than a given number of courses (e.g., more than 2 courses)
     public List<String> getStudentsEnrolledInMoreCourses(List<Student> students, int x) {

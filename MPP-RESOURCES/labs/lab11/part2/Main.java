@@ -33,16 +33,26 @@ public class Main {
         System.out.println(cs401StudentsAddress);
 
         // Calculate the GPA for a given student
+        for (Student st : students) {
+            if (st.getName().equals("Mira")) {
+                System.out.printf("Calculating GPA for Mira: %.2f%n", Util.calculateGPA(st));
+            }
+        }
 
         // Find the student with the highest GPA
+        System.out.println("Student with highest GPA: " + Util.highestGpaStudent(students));
 
         // Get a list of all unique courses taken by students
+        System.out.println("Unique courses: " + Util.getAllUniqueCourses(students));
 
         // Find all students who live in a given city (e.g., "Fairfield") sorted in alphabetical order
+        System.out.println("Students in Fairlfield: " + Util.getByCitySorted(students, "Fairfield"));
 
         // Count the number of students enrolled in a specific course (e.g., "CS401")
+        System.out.println("Total students in CS401: " + Util.countStudentsInCourse(students, "CS401"));
 
         // Get a list of students in a specific section
+        System.out.println("Students In Section: " + Util.studentsInSection(students, 114));
 
         //  Get the names of students who have enrolled in more than a given number of courses (e.g., more than 2 courses)
 
