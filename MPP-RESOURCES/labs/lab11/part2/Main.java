@@ -26,6 +26,7 @@ public class Main {
 
         // Find all the students that are taking a given course
         List<Student> cs401Students = Util.studentsTakingGivenCourse(students, "CS401");
+        System.out.println("Students Taking CS401 Course");
         cs401Students.forEach(System.out::println);
 
         // Get the address of any student that is taking a given course (e.g., "CS401")

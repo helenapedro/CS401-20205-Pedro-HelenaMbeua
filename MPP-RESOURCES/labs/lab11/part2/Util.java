@@ -7,9 +7,11 @@ public class Util {
     // Find all the students that are taking a given course
     public static List<Student> studentsTakingGivenCourse(List<Student> students, String courseCode) {
         return students.stream()
-                .filter(st -> st.getSections()!=null && !st.getSections().stream()
-                        .filter(sec -> courseCode.equals(sec.getCourseCode())).toList().isEmpty()
-                ).toList();
+                .filter(Objects::nonNull)
+                .filter(st -> Optional.ofNullable(st.getSections())
+                        .orElseGet(List::of).stream().anyMatch(sec -> courseCode.equals(sec.getCourseCode()))
+                )
+                .toList();
     }
 
     // Get the address of any student that is taking a given course (e.g., "CS401")

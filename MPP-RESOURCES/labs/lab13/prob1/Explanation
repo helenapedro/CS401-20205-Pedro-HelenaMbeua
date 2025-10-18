@@ -1,0 +1,21 @@
+1. Consider the following code fragments. For each, if there is a compiler error,
+identify where it occurs.
+
+a. First fragment:
+    List<Integer> ints = new ArrayList<>();
+    ints.add(1);
+    ints.add(2);
+    List<Number> nums = ints; // compile error - Even though Integer extends Number,
+                                 List<Integer> is NOT a List<Number>.
+    nums.add(3.14);
+
+Generic subtyping is not covariant, so we cannot assign a List of Number
+collection to the List of Integer, as Integer inherits from Number.
+
+b. Second fragment:
+    List<Integer> ints = new ArrayList<>();
+    ints.add(1);
+    ints.add(2);
+    List<? extends Number> nums = ints;
+    nums.add(3.14); // Compile error - the list 'nums' is covariant, and covariance only
+                                       guarantees reading safely, not writing safely.
